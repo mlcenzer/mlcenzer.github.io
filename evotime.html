@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+		<title>Cenzer Lab | Evo Time</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" 
+			  content="We study evolution on human timescales."> 
+		<link rel="author" href="https://github.com/avbernat">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+		<link rel="icon" href="images/icon.png">
+		<link rel="apple-touch-icon" href="images/icon.png">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				console.log( "document loaded" );
+			});
+
+			$( window ).on( "load", function() {
+				console.log( "window loaded" );
+			});
+    	</script>
+    </head>
+    <body>
+		<header>
+		<!-- Top navigation menu -->
+			<script src="mainNav.js"></script> 
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
+
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/logos/lab_logo5.png" alt="logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="research.html" class="nav_active">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html">Publications</a>
+				<a href="archives.html">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/logos/short_depart_logo.png" border="0">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/logos/department_logo4.png" border="0">
+				</a>
+			</div>
+		</header>
+		
+		<style>
+			.rec:first-child {
+				margin: 0px 0px 0px 0px;
+			}
+			.rec {
+				margin: -350px 0px 0px 0px;
+			}
+			.rec:hover{
+				transition: all 0.2s ease-in-out;
+				transform: scale(1.1);
+				z-index: 10;
+			}
+		</style>
+			
+		<main>
+		<!-- Page content -->
+			<div class="container">
+				<img class="page_picture" src="images/research/nutrition.jpeg" alt="logo">
+				<div class="title-centered">Evolutionary Timescales</div>
+			</div>
+			<br>
+			<div class="row">
+			  <div class="two_columns">
+				  <img src="images/research/cards/1.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/2.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/3.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/4.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/8.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/6.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/7.jpeg" class="rec" style="width:100%;">
+				  <img src="images/research/cards/5.jpeg" class="rec" style="width:100%;">
+				  <br>
+				  <br>
+				  <div class="wfigure_text" style="margin: 0px 0px 0px 10px;"> <i>Herbarium records.</i> Collections of preserved plant specimens and associated data can be used to map the past locations and attributes of host plant species.</div>
+			  </div>
+			  <div class="two_columns">
+				  <p class="research_textr"><i>How does evolution progress on human timescales?</i></p>
+				  <br>
+				   <p class="research_textr">Long-term ecological and evolutionary studies are critical for understanding how biological systems respond to ongoing environmental change. In this system, we have already seen the emergence and collapse of local adaptation over the course of a few short decades. We conduct repeated observations to understand patterns of phenotypic and genetic change over seasonal, annual, and decadal timescales.</p>
+				  <br>
+				  <p class="research_textr">We have been collecting soapberry bug and host plant samples across the state of Florida to monitor phenotypic change since 2013. Because change can happen quickly, we prioritize collecting and repeating key experiments (for example, cross-rearing insects on both host plants). We pair these recent collections with historical data, both from the literature and from museum collections. We use herbarium records to map host plant distributions through time both to look for shifts in plant phenotypes and to put the emergence and collapse of local adaptation in soapberry bugs in a more complete spatial and temporal context.</p>
+			  </div>
+			</div>
+			<br>
+			<p class="explore_text">Explore more research topics &darr; </p>
+			<br>
+			<div style="align-items:center" class="wrapper">
+				<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
+				<a href="mating.html"><button style="float:left"type="button" class="rbutton">Mate Choice</button></a>
+				<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+				<a href="evotime.html"><button style="float:left" type="button"class="b_active">Evo Time</button></a>
+				<a href="morphology.html"><button style="float:left" type="button" class="rbutton">Morphology</button></a>
+			</div>
+			<br>
+			<br>
+		</main>
+		
+		<!-- Copyrights -->
+        <div class="bottom_rights">
+            <br>
+			<p class="rights-writing">Cenzer Lab | University of Chicago</p>
+            <br>
+            <br>
+			<p class="rights-writing">copyright 2020 | By Anastasia Bernat</p>
+            <br>
+            <br>
+            <br>
+        </div> 
+    </body>
+</html>

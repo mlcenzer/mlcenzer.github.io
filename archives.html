@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+		<title>Cenzer Lab | Archives</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" 
+			  content="Read through our code repositories and meeting discussions in our archives."> 
+		<link rel="author" href="https://github.com/avbernat">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+		<link rel="stylesheet" href="images.css">
+		<link rel="icon" href="images/icon.png">
+		<link rel="apple-touch-icon" href="images/icon.png">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				console.log( "document loaded" );
+			});
+
+			$( window ).on( "load", function() {
+				console.log( "window loaded" );
+			});
+    	</script>
+    </head>
+    <body>
+		<header>
+		<!-- Top navigation menu -->
+			<script src="mainNav.js"></script> 
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
+
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/logos/lab_logo5.png" alt="lab logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="research.html">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html">Publications</a>
+				<a href="archives.html" class="nav_active">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/logos/short_depart_logo.png" border="0" alt="department logo">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/logos/department_logo4.png" border="0" alt="department logo">
+				</a>
+			</div>
+		</header>
+		
+		<main>
+		<!-- Page content -->
+			<div class="container">
+				<img class="page_picture" src="images/balloon_vine.jpeg" alt="Balloon vine seed pod."> 
+				<div class="title-centered" style="color:white;">Archives</div>
+			</div>
+			<br>
+			<br>
+
+			<!-- Code Repo Archives -->
+			<div class="archive_text">Code Repositories </div>
+			<hr>
+			<div class="row">
+			  <div class="columns">
+				  <div class="code-container"> 
+					<div class="code-thumb">
+							<a href="https://github.com/mlcenzer/SBB-dispersal"><img loading="lazy" src="images/logos/github_logo3.png" alt="GitHub logo"/>
+							</a>
+						</div>
+					<div class="code-content">
+						<p class="repo">
+							<a class="code_link" href="https://github.com/mlcenzer/SBB-dispersal">SBB-dispersal</a>
+						</p>
+						<p class="repo">Regression modeling of soapberry bug flight dispersal.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="columns">
+					<div class="code-container"> 
+						<div class="code-thumb">
+						 <a href="https://github.com/avbernat/undergrad-collabs">
+							 <img loading="lazy" src="images/logos/github_logo3.png" alt="GitHub logo"/></a>
+						</div>
+						<div class="code-content">
+						<p class="repo"> 
+							<a class="code_link" href="https://github.com/avbernat/undergrad-collabs">undergrad-collabs</a>
+						</p>
+						<p class="repo" style="color: grey; font-size: 14px;">Coding projects as well as R and Python coding lessons for undergraduates.</p>
+						</div>
+					</div>
+			  </div>
+			  <div class="columns">
+					<div class="code-container"> 
+						<div class="code-thumb">
+						 <a href="https://github.com/avbernat/xml-archive">
+							 <img loading="lazy" src="images/logos/github_logo3.png" alt="GitHub logo"/></a>
+						</div>
+						<div class="code-content">
+						<p class="repo"> 
+							<a class="code_link" href="https://github.com/avbernat/xml-archive">xml-archive</a>
+						</p>
+						<p class="repo" style="color: grey; font-size: 14px;">Codifies all written information we find notable from our scientific and historical readings.</p>
+						</div>
+					</div>
+			  </div>
+				<div class="columns">
+					<div class="code-container"> 
+						<div class="code-thumb">
+						 <a href="https://github.com/avbernat/flight-mill">
+							 <img loading="lazy" src="images/logos/github_logo3.png" alt="GitHub logo"/></a>
+						</div>
+						<div class="code-content">
+						<p class="repo"> 
+							<a class="code_link" href="https://github.com/avbernat/flight-mill">flight-mill</a>
+						</p>
+						<p class="repo" style="color: grey; font-size: 14px;">Contains all flight mill code for data processing, including ongoing updates such as using parallel processing.</p>
+						</div>
+					</div>
+			  </div>
+			</div>
+
+			<!-- Lab Meeting Archives -->
+			<div class="archive_text">Lab Meetings</div>
+			<hr>
+			<br>
+            <p class="date">December 2021</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/tigers.png" alt="Am Nat logo"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [6] We discussed colonialism and the relationships between humans and the rest of the living world in the context of "We're Tigers", an art piece and commentary by Ho Tzu Nyen from the book <a href="http://www.openhumanitiespress.org/books/titles/art-in-the-anthropocene/">Art in the Anthropocene</a>.</p>
+				</div>
+			</div>
+			<p class="date">November 2021</p>
+            <div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/braidingsweetgrass.jpeg" alt="Am Nat logo"/>
+				</div>
+				<div class="post-content">
+                    <p class="publications"> [29] We discussed Indigenous Science and the limitations of current academic structures through the lens of "<i>Mishkos Kenomagwen</i>: The Teachings of Grass", a chapter from <a href=https://milkweed.org/book/braiding-sweetgrass><i>Braiding Sweetgrass</i></a> by Robin Wall Kimmerer.</p>
+				</div>
+			</div>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/insect_eye.png" alt="Am Nat logo"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [17] Ana Silberg updates the lab on progress on her senior thesis on insect eye morphology from her study abroad in Paris!</p>
+				</div>
+			</div>
+            <p class="date">June 2021</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/for-all.jpg" alt="Am Nat logo"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [25] The DEI Committee for the Ecology and Evolution Department launched its website! This website serves to increase awareness of DEI-related issues in our department and the broader community. All feedback is welcomed and we encourage you to peruse our lovely <a href="https://ecev-dei.bsd.uchicago.edu/experiences/">staff</a>.</p>
+				</div>
+			</div>
+			<p class="date">February 2021</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/snail.jpg" alt="Am Nat logo"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [15] We submitted a proposal to the <a href="https://comments.amnat.org/2021/01/call-for-special-topics-paper.html">call offered by the <i>American Naturalist</i></a>. We are researching the history of statistical practices in the ecological sciences in the past century.</p>
+				</div>
+			</div>
+			<p class="date">January 2021</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/safety.png" alt="safety drawing"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [21] We discussed safety risks and then made a safety toolkit for the lab after reading <a href="https://www.nature.com/articles/s41559-020-01328-5">"Safe fieldwork strategies for at-risk individuals, their supervisors and institutions"</a> by Amelia-Juliette Claire Demery and  Monique Avery Pipkin. Our safety toolkit includes 2 safety resource maps and a Cenzer Lab ID Sticker design made by Ana Silberg.</p>
+				</div>
+			</div>
+			<p class="date">November 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/feminist_science.png" alt="Feminist New Materialism paper"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [9] We discussed the history and modern day conducts of intersectional, feminist science after reading <a href="https://muse.jhu.edu/chapter/1907288">"Matter in the Shadows: Feminist New Materialism and the Practices of Colonialism"</a> by Deboleena Roy and Banu Subramaniam.</p>
+				</div>
+			</div>
+
+			<p class="date">October 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img src="images/labmeetings/martha.jpeg" alt="Humanitarian video"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [20] We watched video speaker presentations held on Humanities Day, which was hosted by the University of Chicago. Specifically, we watched <a href="https://www.youtube.com/watch?v=hMTn7HWzg2U">"Animals: Expanding the Humanities"</a> by Martha C. Nussbaum.</p>
+				</div>
+			</div>
+
+			<p class="date">July 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Objectivity paper" src="images/labmeetings/epistemologies_eye.jpeg" />
+				</div>
+				<div class="post-content">
+					<p class="publications"> [27] We read Chapter 1 of <i>Objectivity</i> titled <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjd_Nn3ktrsAhV9B50JHS08Az0QFjAAegQIARAC&url=https%3A%2F%2Fcanvas.vt.edu%2Ffiles%2F4550797%2Fdownload%3Fdownload_frd%3D1&usg=AOvVaw1WABT3nik54tBxTrKtPtnv">"Epistemologies of the Eye"</a> by Lorraine Daston and Peter Galison.</p>
+				</div>
+			</div>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Animal rights paper" src="images/labmeetings/animals_equal.jpeg" />
+				</div>
+				<div class="post-content">
+					<p class="publications"> [23] We read Chapter 1 of <a href="https://www.uvm.edu/rsenr/wfb175/singer.pdf"><i>All Animals Are Equal</i></a> by Peter Singer.</p>
+				</div>
+			</div>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Ethics paper" src="images/labmeetings/ethics_answers.jpeg" />
+				</div>
+				<div class="post-content">
+					<p class="publications"> [13] We read Chapter 2 of <a href="http://www.jamesrachels.org/CEPA2.pdf"><i>Can Ethics Provide Answers?</i></a> by James Rachels.</p>
+				</div>
+			</div>
+			<p class="date">June 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Intersectionality in science study" src="images/labmeetings/visibly_invisible.jpeg" />
+				</div>
+				<div class="post-content">
+					<p class="publications"> [3] We read a social science study titled <a href="https://poseidon01.ssrn.com/delivery.php?ID=419112000078116088002001076118068067109042093053023044073119008124066094073009094023038097054120044049061089113030102081023121118073055047067123119111116082067028048042086070125081080088114007096075067094072096071101111087094025116015103080067105069&EXT=pdf">"Visibly Invisible: The Burden of Race and Gender for Female Students of Color Striving for an Academic Career in the Sciences"</a> by Deirdre M. Bowen.</p>
+				</div>
+			</div>
+			<p class="date">May 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Feministic, anti-colonial science video" src="images/labmeetings/plastics.png" />
+				</div>
+				<div class="post-content">
+						<p class="publications"> [8] We watched a short video documentary titled <a href="https://www.theatlantic.com/video/index/591640/recycling-plastics/?utm_medium=social&utm_campaign=the-atlantic&utm_content=edit-promo&utm_term=2019-12-28T23%253A40%253A59&utm_source=facebook&fbclid=IwAR2-LvjQxmMkAel_1Mnmrb5ejlinSn4dNwYshal6D-mZSp34yzkK-cxsUBc">"Recyling is Like a Band-Aid on Gangrene"</a> and produced by <i>The Atlantic</i>. We also read Chapter 1 of <i>Social Statistics in Use</i> by Philip M. Hauser.</p>
+					<br>
+				</div>	
+			</div>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Normality and statistics paper" src="images/labmeetings/normality.jpeg"/>
+				</div>
+				<div class="post-content">
+					<p class="publications"> [5] We read the Introduction to <a href="http://ieas-szeged.hu/downtherabbithole/wp-content/uploads/2018/02/Lennard-J.-Davis-ed.-The-Disability-Studies-Reader-Routledge-2014.pdf"><i>The Disability Studies Reader</i></a> by Lennard J. Davis.</p>
+				</div>	
+			</div>
+			<p class="date">April 2020</p>
+			<div class="post-container" id="fade-in"> 
+				<div class="post-thumb">
+					<img alt="Data integrity case" src="images/labmeetings/data_integrity.jpeg" />
+				</div>
+				<div class="post-content">
+						<p class="publications"> [14] We read about a spider biologist, Jonathan Pruitt, who has charges of data fraud against him. We read about the discovery of this data fraud through his collatorator's lab post, <a href="https://laskowskilab.faculty.ucdavis.edu/2020/01/29/retractions/">'What To Do When you Don't Trust Your Data Anymore'</a>.</p>
+				</div>	
+			</div>
+			<br>
+			<br>
+			<br>
+		</main>
+		
+		<!-- Copyrights -->
+        <div class="bottom_rights">
+            <br>
+			<p class="rights-writing">Cenzer Lab | University of Chicago</p>
+            <br>
+            <br>
+			<p class="rights-writing">&copy; 2020 | By Anastasia Bernat</p>
+            <br>
+            <br>
+            <br>
+        </div> 
+    </body>
+</html>

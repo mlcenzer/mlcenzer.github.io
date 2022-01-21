@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+		<title>Cenzer Lab | Morphology</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" 
+			  content="We collect decades worth of data on the evolving physical form of our model species: the soapberry bug."> 
+		<link rel="author" href="https://github.com/avbernat">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navs_style.css">
+		<link rel="icon" href="images/icon.png">
+		<link rel="apple-touch-icon" href="images/icon.png">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				console.log( "document loaded" );
+			});
+
+			$( window ).on( "load", function() {
+				console.log( "window loaded" );
+			});
+    	</script>
+    </head>
+    <body>
+		<header>
+		<!-- Top navigation menu -->
+			<script src="mainNav.js"></script>
+			<div class="topnav">
+			<a href="contactus.html">Contact Us</a> 
+			</div> 
+
+			<!-- Main navigation menu content -->
+			<div class="nav" id="mainNav">
+				<a href="index.html" class="lab-logo">
+					 <img class="lab_logo" src="images/logos/lab_logo5.png" alt="logo">
+				</a>
+
+				<a href="index.html">Home</a>
+				<a href="research.html" class="nav_active">Research</a>
+				<a href="people.html">People</a>
+				<a href="publications.html">Publications</a>
+				<a href="archives.html">Archives</a>
+				<a href="joinus.html">Join the Lab</a>
+
+				<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="Navigate()">&#9776;</a>
+
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="sdepart-logo" src="images/logos/short_depart_logo.png" border="0">
+				</a>
+				<a href="https://ecologyandevolution.uchicago.edu/">
+					<img class="depart-logo" src="images/logos/department_logo4.png" border="0">
+				</a>
+			</div>
+		</header>
+		
+		<main>
+		<!-- Page content -->
+			<div class="container">
+				<img class="page_picture" src="images/research/morphology.jpeg" alt="logo">
+				<div class="title-centered">Morphology</div>
+			</div>
+			<br>
+			<div class="row">
+			  <div class="two_columns">
+				  <p class="research_textl2"><i>How is morphology impacted by the developmental environment and evolutionary history?</i></p>
+				  <br>
+                  <p class="research_textl2"> Morphology is central to our understanding of how soapberry bugs use and move between host plants. The two primary aspects of soapberry bug morphology that we study are beak length and wing length. </p>
+                  <br>
+                  <p class="research_textl2">Soapberry bugs feed on the seeds of their host plants using an elongated beak. Bugs with longer beaks are more successful at feeding through the inflated seedpods of the native host, balloon vine. In contrast, bugs with shorter beaks are more successful at feeding on the exposed seeds of the introduced host, golden rain tree. This divergent selection pressure led to different beak lengths on these two host plants after soapberry bugs colonized and adapted to golden rain tree in the mid-1900s. However, in the last 30 years gene flow has swamped the long beaks of populations on the native host, leading to a landscape dominated by short-beaked bugs. We study how soapberry bug beak length changes over time using field collections, and how the developmental environment (host plant, temperature, conspecific feeding, etc.) influences the eventual beak size of individual bugs. </p>
+				  <br>
+                  <p class="research_textl2"> Soapberry bugs have multiple wing morphs, with some individuals having short, non-functional wings. We use wing morphology to understand insect flight, as well as studying how it changes over evolutionary time in the field and developmental time in the lab.</p>
+                  <br>
+				  <p class="research_textl2"> We use microscopic photography to measure the evolving physical form of soapberry bugs. We take body length, wing length, thorax length, beak length, and wing-area measurements. In addition, we conduct dissections under the microscope for wing-muscle digestion.</p>
+				  <br>
+				  <br>
+				  <img src="images/research/wing.bmp" style="width:100%; margin: 0px 0px 0px 15px;">
+				  <br>
+				  <br>
+				  <div class="wfigure_text" style="margin: 0px 0px 0px 15px;"> <i>Single wing.</i> We use ImageJ to process individual wings and extract wing area or wing curvature measurements.</div>
+			  </div>
+				<div class="two_columns">
+					<div class="img-with-text">
+						<img class="figure_img" src="images/research/dorsal-26-male.jpg"  alt="dorsal male"/>
+						<br>
+						<img class="figure_img" src="images/research/dorsal-67-female.jpg" alt="dorsal female"/>
+						<br>
+						<p class="wfigure_text" 
+					   style="margin: 0px 20px 0px 20px;">  <i>Dorsal images of a long-winged (top) and short-winged (bottom) soapberry bug.</i> </p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<p class="explore_text">Explore more research topics &darr; </p>
+			<br>
+			<div style="align-items:center" class="wrapper">
+				<a href="dispersal.html"><button style="float:left" type="button" class="rbutton">Dispersal</button></a>
+				<a href="mating.html"><button style="float:left"type="button" class="rbutton">Mate Choice</button></a>
+				<a href="host.html"><button style="float:left" type="button" class="rbutton">Host Plant</button></a>
+				<a href="evotime.html"><button style="float:left" type="button"class="rbutton">Evo Time</button></a>
+				<a href="morphology.html"><button style="float:left" type="button" class="b_active">Morphology</button></a>
+			</div>
+			<br>
+			<br>
+		</main>
+		
+		<!-- Copyrights -->
+        <div class="bottom_rights">
+            <br>
+			<p class="rights-writing">Cenzer Lab | University of Chicago</p>
+            <br>
+            <br>
+			<p class="rights-writing">&copy; 2020 | By Anastasia Bernat</p>
+            <br>
+            <br>
+            <br>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,577 @@
+/* Features Across the Board */
+
+:root {
+	--university-col: maroon;
+	--mainfont: Palatino;
+	--subfont: Verdana;
+	--subfont2: "Century Gothic", CenturyGothic, 
+					Geneva, AppleGothic, sans-serif;
+	--subfont3:  "Helvetica Neue", Helvetica, 
+					sans-serif, "Helvetica Bold", Icons;
+	--main-fontsize: 18px;
+	--sub-fontsize: 15px;
+	--small-fontsize: 14px;
+	--lspacing: 0.02em;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Page Themes */
+
+body {
+	background-color: whitesmoke;
+}
+
+p {  /* Make sure this makes sense */
+	font-family: var(--subfont3);
+	letter-spacing: var(--lspacing);
+	font-size: var(--small-fontsize);
+} 
+
+a { /* in-text links */
+	color: var(--university-col);
+} 
+
+a:hover {
+	color: grey;
+}
+
+.page_picture{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Text Organization */
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered, .title-centered, .top-right {
+	font-family: var(--subfont);
+	font-weight: bold;
+	position: absolute;
+	color: white;
+}
+
+.centered, .title-centered {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 27px;
+}
+
+/* Home Page */
+/* Join Us & Contact Us Page */
+
+.title-centered { /* slide show text */ 
+	font-size: 30px;
+}
+.top-right { /* slide show text */ 
+  	top: 160px; 
+  	right: 96px;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+} 
+
+.main_text, .research_p {
+	margin: 2px 145px;
+    font-family: var(--mainfont);
+    font-size: var(--main-fontsize);
+    letter-spacing: var(--lspacing);
+	line-height: 25.4px;
+    color: black;
+    text-align: center;
+}
+
+p span.special{
+	font-family: var(--subfont);
+	font-size: 23px;
+    font-weight: bold;
+    color: var(--university-col);
+}
+
+.center { /* centers the sponsors */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors img{
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    padding: 0px 35px;
+}
+
+
+/* Research Page */
+
+.research_p {
+	color: dimgrey;
+	margin: 2px 65px;
+}
+
+#chartdiv { /* force-directed diagram */
+	width: 100%;
+	height: 1150px;
+	max-width: 100%;
+	margin: -300px 0px 0px 0px;
+	font-family: var(--subfont);
+	text-align: center;
+}
+
+.rbutton, .b_active {
+	font-family: var(--subfont);
+    font-size: var(--sub-fontsize);
+    color: #edf0f1;
+    border: none;
+    padding: 9px 25px;
+    background-color: var(--university-col);
+    cursor: pointer;
+    display: block;
+    margin: 0px 1px;
+	outline: none;
+}
+
+.rbutton:hover, .b_active {
+    background-color: #333;
+} 
+
+.wrapper {
+    display: flex;
+    justify-content:center; 
+}
+
+.wrapper a{
+	z-index: 3;
+}
+
+.explore_text, .explore_text2 {
+	font-family: var(--subfont);
+    font-size: var(--sub-fontsize);
+    text-align: center;
+    color: var(--university-col);
+}
+
+.explore_text2 {
+	margin: -250px 0px 0px 0px; 
+}
+
+/* Sub Research Pages */
+
+.two_columns {
+    float: left;
+    width: 50%;
+	padding: 30px;
+} 
+
+/* l,l2 = left side | r = right side */
+/* research_textl2 is host, morphology, plasticity */
+/* research_textl and research_textr is dispersal */
+/* research_textr is evo time */
+
+.research_textl2, .research_textr, .research_textl {
+    font-size: var(--sub-fontsize);
+	color: dimgrey;
+}
+
+.research_textl2 {
+    margin: 0px -5px 0px 20px;
+}
+
+.research_textr {
+    margin: 0px 0px 0px -25px;
+}
+
+.research_textl {
+    margin: 0px 0px 0px 10px;
+}
+
+.tfigure_text, .wfigure_text {
+    font-family: var(--subfont3);
+    color: grey;
+    font-size: 13px;
+	margin: 0px 20px 0px 20px;
+}
+
+.map {
+	padding: 0px 20px;
+}
+
+.figure_img {
+	width: 90%;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* People Page */
+
+.row {
+    display: flex;
+    justify-content: space between;
+    flex-wrap: wrap; 
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.people_column {
+    float: left;
+    width: 33.33%;
+    padding: 65px;
+} 
+
+.code_img {
+	width: 35px;
+	padding: 5px 5px 0px 0px;
+}
+.code_img:hover {
+	filter: invert(48%);
+}
+.collapsible {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 82%;
+  border: none;
+  text-align: left;
+  outline: none;
+  	font-size: var(--small-fontsize);
+	font-family: var(--subfont);
+	margin: 3px 0px 3px 145px;
+}
+
+.active, .collapsible:hover {
+  background-color: #777;
+}
+
+.content {
+  padding: 0px 28px;
+  display: none;
+  overflow: hidden;
+	font-family: var(--subfont);
+	color: #777;
+	font-size: var(--small-fontsize);
+	
+}
+
+.pbutton {
+    font-family: var(--subfont);
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    border: none;
+    background-color: var(--university-col);
+    cursor: pointer;
+    padding: 9px 25px;
+    display: block;
+    margin: 0px 15px;
+	outline: none;
+}
+
+.pbutton:hover {
+    background-color: #333;
+}  
+
+.jobname, .email {
+    font-family: var(--subfont);
+    font-weight: bold;
+    font-size: var(--small-fontsize);
+}
+
+.position{
+    font-family: var(--subfont);
+    color: grey;
+    font-size: var(--small-fontsize);
+}
+
+.email {
+    color: var(--university-col);
+}
+
+.summary {
+    font-family: var(--subfont);
+    font-size: 14.3px;
+	margin: 2px 145px;
+	line-height: 18px;
+}
+
+.summary2 {
+    font-family: var(--subfont);
+    font-size: var(--small-fontsize);
+}
+
+.title {
+    font-family: var(--subfont2);
+    font-size: 25px;
+	line-height: 40px;
+    color: var(--university-col);
+}
+
+
+/* Publications */
+
+.post-container {
+    margin: 10px 10px 0px 0px;  
+    overflow: auto
+}
+.post-thumb {
+    float: left;
+}
+
+.post-thumb img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 10px 0px 10px 50px; 
+    padding: 0px 15px;
+}
+
+.post-content {
+    margin-left: 10px
+}
+
+.publications{
+    font-family: var(--subfont);
+    margin: 15px 160px; 
+}
+.timeline {
+	font-family: var(--subfont2);
+    margin: 4px 35px;
+    font-size: 26px; 
+}
+
+
+/* Archives Page */
+
+.date {
+	font-family: var(--subfont2);
+    margin: 4px 35px;
+	letter-spacing: 0.7px; 
+    font-size: var(--sub-fontsize);
+}
+
+hr {width: 95%; /* element displayed as a horizontal rule */
+	margin-left: auto; 
+	margin-right: auto;
+	background-color: gainsboro;
+	height: 1px;
+	border: none;
+}
+
+.archive_text {
+    font-family:  Tahoma, Verdana, Segoe, sans-serif;
+	letter-spacing: 1.2px;
+    font-size: var(--main-fontsize);
+	color: black;
+	margin: 4px 20px; 
+} 
+
+.columns {
+    float: left;
+    width: 50%;
+	padding: 0px;
+} 
+
+.code-container {
+    margin: 10px 0px 0px 0px;  
+    overflow: auto
+}
+.code-thumb {
+    float: left
+}
+.code-thumb img {
+    display: block;
+    width: 120px;
+    height: 100%;
+    margin: 10px 0px 10px 30px; 
+    padding: 0px 20px 0px 20px;
+}
+
+.code-content {
+    margin-left: 105px;
+}
+
+.repo{
+    font-family: var(--subfont);
+	color: grey;
+}
+
+.code_link {
+	color: black;
+} 
+
+.code_link:hover {
+	color: maroon;
+}
+
+/* Window Adjustments */
+
+@media screen and (max-width: 1160px) {
+	.column {
+		padding: 40px;
+	}
+	.collapsible {
+		width: 75%;
+	}
+	.research_p {
+		margin: 2px 45px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.centered {
+		font-size: 20px;
+	}
+	.title-centered {
+		font-size: 24px;
+	}
+	.main_text {
+		margin: 2px 85px;
+	}
+	.sponsors img{
+		width: 40%;
+		padding: 0px 0px;
+	}
+	p {
+		margin: 2px 45px;
+	}
+	.column {
+    	padding: 20px;
+	}
+	.publications{
+    	margin: 15px 20px 0px 160px; 
+	}
+	.collapsible {
+		margin: 0px 0px 0px 45px;
+		width: 88%;
+	}
+	.summary {
+		margin: 2px 45px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.people_column {
+		width: 50%;
+    	padding: 20px;
+	}
+	.tfigure_text{
+		margin: 0px 5px 0px 60px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.rbutton, .b_active {
+		font-size: 13px;
+		padding: 9px 15px;
+	}
+	.pbutton {
+		font-size: var(--small-fontsize);
+	}
+	.column {
+		width: 50%;
+    	padding: 20px;
+	}
+	.people_column {
+		width: 50%;
+    	padding: 20px;
+	}
+	.map {
+		padding: 0px 0px;
+	}
+	.two_columns {
+		padding: 10px;
+	} 
+	.columns {
+		width: 100%;
+	} 
+	.wfigure_text{
+		margin: 0px 0px 0px 10px;
+	}
+	.tfigure_text{
+		margin: 0px 5px 0px 30px;
+	}
+	.tfigure_text, .wfigure_text {
+    	font-size: 12px;
+	}
+	.collapsible {
+		margin: 0px 0px 0px 45px;
+		width: 80%;
+	}
+	.research_textl2, .research_textr,  .research_textl {
+		font-size: var(--small-fontsize);
+	}
+	.research_textr {
+		margin: 0px 5px 0px 0px;
+	}
+	.main_text {
+		margin: 2px 45px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.rbutton, .b_active {
+		font-size: 12px;
+		padding: 9px 5px;
+	}
+	.email, .description, .name {
+		font-size: 12px;
+	}
+	.centered {
+		font-size: 16px;
+	}
+	.top-right {
+		transform: translate(-60%, -165%);
+		font-size: 20px;
+	} 
+	.timeline {
+		margin: 4px 10px;
+	}
+	.post-container {
+    	margin: 10px 10px 0px -30px;  
+	}
+	.two_columns {
+		padding: 5px;
+	} 
+	.main_text {
+		margin: 2px 25px;
+	}
+}
+
+/* Bottom Rights */
+
+.bottom_rights, .bottom_rights2 {
+  background-color: #333;
+  overflow: hidden;
+}
+.bottom_rights2 {
+	margin: -2px 0px 0px 0px;
+	padding: 0px 0px 21px 0px;
+}
+
+.rights-writing {
+	font-size: var(--sub-fontsize);
+	float: left; 
+	color: lightgrey;
+	padding: 9px 15px;
+	margin: 0px 0px 0px 0px;
+}
